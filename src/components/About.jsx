@@ -39,13 +39,13 @@ export default function About() {
             className="space-y-6"
           >
             <div className="glass-card p-9 space-y-6">
-              <p className="text-stone-300 text-base leading-[2.0]">
+              <p className="text-stone-300 text-base leading-[2.2]">
                 I'm a <span className="text-white font-semibold">B.Tech CSE (AI & ML)</span> student at BV Raju Institute of Technology with hands-on internship experience in <span className="text-yellow-300 font-medium">Computer Vision, Full-Stack Development, and Data Analysis</span>. SGPA: <span className="text-yellow-400 font-semibold">9.4</span>.
               </p>
-              <p className="text-stone-300 text-base leading-[2.0]">
+              <p className="text-stone-300 text-base leading-[2.2]">
                 Built production-relevant systems including <span className="text-white font-semibold">face detection pipelines</span>, accent classification models, and a <span className="text-white font-semibold">MERN trading platform</span>. Strong in Python and JavaScript; comfortable with deep learning inference, REST APIs, and remote team workflows.
               </p>
-              <p className="text-stone-300 text-base leading-[2.0]">
+              <p className="text-stone-300 text-base leading-[2.2]">
                 <span className="text-yellow-300 font-medium">Google Gemini Campus Ambassador</span> — driving AI awareness through workshops and peer sessions, promoting responsible AI adoption on campus.
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function About() {
               >
                 <div className="mb-4 flex items-center justify-center w-12 h-12 bg-white/5 rounded-xl border border-white/10 group-hover:scale-110 transition-transform">{area.icon}</div>
                 <div className="text-white font-semibold text-sm mb-2.5 group-hover:text-yellow-300 transition-colors">{area.title}</div>
-                <div className="text-stone-500 text-xs leading-relaxed">{area.desc}</div>
+                <div className="text-stone-500 text-xs leading-[2.1]">{area.desc}</div>
               </motion.div>
             ))}
 
@@ -116,3 +116,4 @@ export default function About() {
     </section>
   )
 }
+

@@ -200,7 +200,7 @@ export default function Hero() {
 
           {/* Tagline */}
           <motion.div variants={item}>
-            <p className="text-stone-300 text-[1.08rem] leading-[2.0] max-w-[540px] drop-shadow-md">
+            <p className="text-stone-300 text-[1.08rem] leading-[2.2] max-w-[540px] drop-shadow-md">
               B.Tech CSE (AI &amp; ML) student with hands-on internship experience in Computer Vision, Full-Stack Development, and Data Analysis. Building production-relevant systems with Python and JavaScript.
             </p>
           </motion.div>
@@ -262,3 +262,4 @@ export default function Hero() {
     </section>
   )
 }
+

@@ -209,7 +209,7 @@ export default function Experience() {
                     {/* Bullet points */}
                     <ul className="space-y-3 mb-6">
                       {item.bullets.map((b, bi) => (
-                        <li key={bi} className="flex items-start gap-3 text-stone-400 text-sm leading-[1.85]">
+                        <li key={bi} className="flex items-start gap-3 text-stone-400 text-sm leading-[2.2]">
                           <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-yellow-500/60 shrink-0" />
                           {b}
                         </li>
@@ -246,3 +246,4 @@ export default function Experience() {
     </section>
   )
 }
+

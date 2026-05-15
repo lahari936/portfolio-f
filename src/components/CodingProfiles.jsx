@@ -210,7 +210,7 @@ export default function CodingProfiles() {
               </div>
 
               {/* Description */}
-              <p className="text-slate-500 text-[11px] leading-relaxed">{p.desc}</p>
+              <p className="text-slate-500 text-[11px] leading-[2.1]">{p.desc}</p>
             </motion.a>
           ))}
         </div>
@@ -218,3 +218,4 @@ export default function CodingProfiles() {
     </section>
   )
 }
+

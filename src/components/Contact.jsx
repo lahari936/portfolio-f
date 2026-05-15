@@ -49,7 +49,7 @@ export default function Contact() {
           <p className="text-yellow-400 text-sm font-semibold tracking-widest uppercase mb-4">Let's Connect</p>
           <h2 className="section-heading text-white mb-5">Get In <span className="gradient-text">Touch</span></h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-400 to-transparent rounded-full" />
-          <p className="text-stone-500 text-sm mt-5 max-w-md leading-relaxed">
+          <p className="text-stone-500 text-sm mt-5 max-w-md leading-[2.1]">
             Open to full-time roles, internships, freelance projects, and collaborations. Drop a message!
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-stone-500 text-xs font-medium mb-0.5 tracking-wide uppercase">{c.label}</div>
-                  <div className={`text-sm font-medium leading-relaxed ${c.color}`}>{c.value}</div>
+                  <div className={`text-sm font-medium leading-[2.1] ${c.color}`}>{c.value}</div>
                 </div>
                 <svg className="w-4 h-4 text-stone-700 group-hover:text-yellow-400 transition-colors ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -134,3 +134,4 @@ export default function Contact() {
     </section>
   )
 }
+

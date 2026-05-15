@@ -58,7 +58,7 @@ export default function Projects() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-400 to-transparent rounded-full" />
-          <p className="text-stone-500 text-sm mt-5 max-w-lg leading-relaxed">
+          <p className="text-stone-500 text-sm mt-5 max-w-lg leading-[2.1]">
             Production-focused projects that push real engineering boundaries. Built with purpose.
           </p>
         </motion.div>
@@ -91,12 +91,12 @@ export default function Projects() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-['Outfit'] font-bold text-white text-base leading-snug mb-4">
+                <h3 className="font-['Outfit'] font-bold text-white text-base leading-[1.6] mb-4">
                   {proj.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-[1.9]">
+                <p className="text-slate-400 text-sm leading-[2.2]">
                   {proj.desc}
                 </p>
               </div>
@@ -170,3 +170,4 @@ export default function Projects() {
     </section>
   )
 }
+
