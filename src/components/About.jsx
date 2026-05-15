@@ -5,10 +5,10 @@ export default function About() {
   const [ref, inView] = useInView(0.15)
 
   const focusAreas = [
-    { icon: <svg className="w-8 h-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>, title: 'React & Frontend', desc: 'Building performant, accessible UIs with React, Next.js, and modern CSS.' },
-    { icon: <svg className="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>, title: 'Backend Engineering', desc: 'Designing REST APIs, authentication, and scalable server architecture with Node.js.' },
-    { icon: <svg className="w-8 h-8 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>, title: 'AI Integration', desc: 'Integrating AI APIs to build intelligent, real-world products.' },
-    { icon: <svg className="w-8 h-8 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>, title: 'DSA & Fundamentals', desc: 'Actively practicing data structures, algorithms, and software engineering principles.' },
+    { icon: <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>, title: 'Computer Vision', desc: 'Building face detection pipelines with SCRFD, YuNet, OpenCV and ONNX Runtime for real-time commercial applications.' },
+    { icon: <svg className="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>, title: 'Full Stack (MERN)', desc: 'Designing REST APIs, scalable backends, and clean React frontends for production-ready web applications.' },
+    { icon: <svg className="w-8 h-8 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>, title: 'AI / ML', desc: 'Accent classification with SVM + Whisper, deep learning inference, and building speech AI pipelines with 85.3% accuracy.' },
+    { icon: <svg className="w-8 h-8 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>, title: 'Data Analysis', desc: 'Crypto Volatility & Risk Analysis using Python and Pandas on real-world financial data; automated analysis workflows.' },
   ]
 
   return (
@@ -40,13 +40,13 @@ export default function About() {
           >
             <div className="glass-card p-9 space-y-6">
               <p className="text-stone-300 text-base leading-[2.0]">
-                I'm a <span className="text-white font-semibold">MERN Stack Developer</span> and B.Tech student at BV Raju Institute of Technology (CSE — AI & ML, SGPA: <span className="text-yellow-400 font-semibold">9.4</span>), currently building scalable full-stack applications and strengthening my problem-solving skills through Data Structures and Algorithms.
+                I'm a <span className="text-white font-semibold">B.Tech CSE (AI & ML)</span> student at BV Raju Institute of Technology with hands-on internship experience in <span className="text-yellow-300 font-medium">Computer Vision, Full-Stack Development, and Data Analysis</span>. SGPA: <span className="text-yellow-400 font-semibold">9.4</span>.
               </p>
               <p className="text-stone-300 text-base leading-[2.0]">
-                I specialize in building <span className="text-white font-semibold">responsive, production-ready web applications</span> using MongoDB, Express.js, React, and Node.js. I prefer shipping <span className="text-yellow-300 font-medium">practical systems</span> that solve real user problems over tutorial-level clones.
+                Built production-relevant systems including <span className="text-white font-semibold">face detection pipelines</span>, accent classification models, and a <span className="text-white font-semibold">MERN trading platform</span>. Strong in Python and JavaScript; comfortable with deep learning inference, REST APIs, and remote team workflows.
               </p>
               <p className="text-stone-300 text-base leading-[2.0]">
-                My current focus is on <span className="text-white font-semibold">AI-powered applications</span>, backend architecture, and preparing for product-based engineering roles by mastering fundamentals and execution speed.
+                <span className="text-yellow-300 font-medium">Google Gemini Campus Ambassador</span> — driving AI awareness through workshops and peer sessions, promoting responsible AI adoption on campus.
               </p>
             </div>
 

@@ -7,6 +7,28 @@ import { useInView } from '../hooks/useInView'
 const timeline = [
   {
     type: 'work',
+    role: 'AI / Computer Vision Intern',
+    org: 'Chitralai',
+    period: 'Present',
+    tag: 'Internship',
+    tagColor: 'bg-blue-500/15 text-blue-300 border-blue-500/30',
+    dotColor: 'from-blue-400 to-cyan-500',
+    dotShadow: 'shadow-blue-500/40',
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    ),
+    bullets: [
+      'Evaluated and benchmarked deep learning face detection models (SCRFD, YuNet, OpenCV pipelines) across accuracy, inference speed, and robustness under occlusions, pose variation, and low-light conditions.',
+      'Developed optimized CV workflows for face detection, preprocessing, bounding box refinement, and performance benchmarking on production datasets using Python, OpenCV, and ONNX Runtime.',
+      'Measured model quality via precision, recall, IoU, FP/FN rates, and latency benchmarks; contributed improvements toward deployment in real-time commercial applications.',
+    ],
+    tech: ['Python', 'OpenCV', 'ONNX Runtime', 'SCRFD', 'YuNet', 'Deep Learning'],
+  },
+  {
+    type: 'work',
     role: 'Flutter Developer Intern (Paid)',
     org: 'RGES India',
     period: 'Oct 2025 – Feb 2026',
@@ -14,47 +36,77 @@ const timeline = [
     tagColor: 'bg-green-500/15 text-green-300 border-green-500/30',
     dotColor: 'from-green-400 to-emerald-500',
     dotShadow: 'shadow-green-500/40',
-    icon: <svg className="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>,
+    icon: (
+      <svg className="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    ),
     bullets: [
-      'Developed responsive dashboard & profile modules for enterprise mobile apps.',
-      'Implemented pixel-perfect UI from Figma designs using Flutter/Dart.',
-      'Collaborated with design team to ship production-ready components on schedule.',
+      'Built responsive dashboard and profile modules from Figma designs using Flutter, covering web layouts and cross-platform UI components.',
+      'Collaborated on live projects with designers and developers; maintained structured documentation throughout the delivery cycle.',
     ],
-    tech: ['Flutter', 'Dart', 'Figma', 'Mobile Dev'],
+    tech: ['Flutter', 'Dart', 'Figma', 'Cross-Platform UI'],
   },
   {
     type: 'work',
-    role: 'Virtual Internship — Data Science',
+    role: 'Data Analysis Virtual Intern',
     org: 'Infosys Springboard',
     period: 'Nov 2025 – Jan 2026',
     tag: 'Internship',
     tagColor: 'bg-yellow-500/15 text-yellow-300 border-yellow-500/30',
     dotColor: 'from-yellow-400 to-amber-500',
     dotShadow: 'shadow-yellow-500/40',
-    icon: <svg className="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>,
+    icon: (
+      <svg className="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    ),
     bullets: [
-      'Built a Crypto Volatility & Risk Analysis system with Python & Pandas on real financial data.',
-      'Performed data preprocessing, volatility & trend analysis to assess market risk.',
-      'Automated analysis pipelines and generated actionable insights reports.',
+      'Built a Crypto Volatility & Risk Analysis system with Python and Pandas on real-world financial data; automated analysis workflows and delivered actionable market insights.',
     ],
     tech: ['Python', 'Pandas', 'Data Analysis', 'Financial Modelling'],
+  },
+  {
+    type: 'work',
+    role: 'Google Gemini Student Campus Ambassador',
+    org: 'Google',
+    period: 'Present',
+    tag: 'Ambassador',
+    tagColor: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+    dotColor: 'from-amber-400 to-orange-500',
+    dotShadow: 'shadow-amber-500/40',
+    icon: (
+      <svg className="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+      </svg>
+    ),
+    bullets: [
+      'Drove AI tool awareness on campus via workshops and peer sessions; promoted responsible AI usage and Gemini workflow adoption.',
+    ],
+    tech: ['Google AI', 'Gemini', 'Community Building', 'Workshops'],
   },
   {
     type: 'education',
     role: 'B.Tech — CSE (AI & ML)',
     org: 'BV Raju Institute of Technology, Narsapur',
-    period: '2024 – 2028',
+    period: 'Aug 2024 – Aug 2028',
     tag: 'Education',
-    tagColor: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
-    dotColor: 'from-amber-400 to-yellow-500',
-    dotShadow: 'shadow-amber-500/40',
-    icon: <svg className="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14v7" /></svg>,
+    tagColor: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+    dotColor: 'from-purple-400 to-violet-500',
+    dotShadow: 'shadow-purple-500/40',
+    icon: (
+      <svg className="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14v7" />
+      </svg>
+    ),
     bullets: [
-      'Pursuing B.Tech in Computer Science Engineering with AI & ML specialisation.',
-      'Current SGPA: 9.4 — consistently among top performers in the batch.',
-      'Active in development clubs, open-source contributions, and hackathons.',
+      'SGPA: 9.4 — consistently among top performers.',
+      'Relevant coursework: Data Structures, OOP, DBMS, ML Fundamentals, Computer Vision.',
+      'Core Member of Entrepreneurship Club (E-Cell) — participated in startup ideation, innovation events, and collaborative product-thinking initiatives.',
     ],
-    tech: ['React', 'Node.js', 'Python', 'DSA', 'ML Fundamentals'],
+    tech: ['Python', 'JavaScript', 'DSA', 'ML Fundamentals', 'Computer Vision'],
   },
 ]
 

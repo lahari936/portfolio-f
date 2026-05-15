@@ -3,64 +3,38 @@ import { useInView } from '../hooks/useInView'
 
 const projects = [
   {
-    title: 'Zerodha-Inspired Stock Trading Platform',
-    desc: 'Full-stack MERN trading platform clone emphasizing backend logic, database modeling, RESTful API design, and clean UI. Focuses on real trade data flow, portfolio management, and order handling.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT'],
+    title: 'Accsonify — AI-Based Accent Detection & Conversion',
+    desc: 'Two-stage speech AI pipeline: Whisper acoustic embeddings + SVM classifier achieving 85.3% validation accuracy across 4 accent categories. Implemented speaker-aware accent conversion preserving pitch, speaking rate, and vocal traits via transcription + neural TTS synthesis. Co-authored a technical research paper documenting methodology, evaluation metrics, and system architecture.',
+    tech: ['Python', 'Whisper', 'SVM', 'TTS', 'AI/ML', 'NLP'],
     github: 'https://github.com/lahari936',
     demo: null,
-    icon: <svg className="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+    icon: (
+      <svg className="w-6 h-6 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+      </svg>
+    ),
+    gradient: 'from-violet-500/15 to-purple-500/5',
+    border: 'border-violet-500/15',
+    tag: 'AI Research',
+    tagColor: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
+    highlight: '85.3% accuracy',
+  },
+  {
+    title: 'Zerodha-Inspired Stock Trading Platform',
+    desc: 'Full-stack trading platform with robust backend logic, MongoDB data modelling, RESTful API design, and a React.js frontend with clean reusable components. Production-focused with real trade data flow, portfolio management, and order handling.',
+    tech: ['MERN Stack', 'MongoDB', 'REST APIs', 'React.js', 'Node.js', 'Express.js'],
+    github: 'https://github.com/lahari936',
+    demo: null,
+    icon: (
+      <svg className="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    ),
     gradient: 'from-green-500/15 to-emerald-500/5',
     border: 'border-green-500/15',
     tag: 'Full Stack',
     tagColor: 'text-green-400 bg-green-500/10 border-green-500/20',
-  },
-  {
-    title: 'AI Powered Financial Tracker',
-    desc: 'Intelligent expense tracker that visualizes finances through interactive pie charts, analyzes spending patterns, and provides AI-driven suggestions to manage budget effectively using Google AI APIs.',
-    tech: ['React.js', 'Google AI API', 'Node.js', 'MongoDB', 'Chart.js'],
-    github: 'https://github.com/lahari936',
-    demo: null,
-    icon: <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
-    gradient: 'from-blue-500/15 to-indigo-500/5',
-    border: 'border-blue-500/15',
-    tag: 'AI Product',
-    tagColor: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
-  },
-  {
-    title: 'Gamified Habit Tracker',
-    desc: 'Daily habit management app with streak tracking, leaderboards, progress analytics, and JWT authentication. Designed to drive consistency through gamification mechanics and a responsive dashboard UI.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT'],
-    github: 'https://github.com/lahari936',
-    demo: null,
-    icon: <svg className="w-6 h-6 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
-    gradient: 'from-violet-500/15 to-purple-500/5',
-    border: 'border-violet-500/15',
-    tag: 'Full Stack',
-    tagColor: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
-  },
-  {
-    title: 'AI Telugu Lyrics Generator',
-    desc: 'AI-powered platform that generates authentic Telugu lyrics inspired by different musical styles. Features real-time generation, style-based prompting, and a clean responsive UI with optimized AI prompts.',
-    tech: ['React.js', 'Node.js', 'AI APIs', 'MongoDB'],
-    github: 'https://github.com/lahari936',
-    demo: null,
-    icon: <svg className="w-6 h-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>,
-    gradient: 'from-pink-500/15 to-rose-500/5',
-    border: 'border-pink-500/15',
-    tag: 'AI Product',
-    tagColor: 'text-pink-400 bg-pink-500/10 border-pink-500/20',
-  },
-  {
-    title: 'Crypto Volatility & Risk Analysis',
-    desc: 'Data science project built during Infosys internship. Analyzes real-world crypto financial data using Python and Pandas — performing volatility analysis, trend detection, and generating actionable risk insights.',
-    tech: ['Python', 'Pandas', 'Data Analysis', 'Visualization'],
-    github: 'https://github.com/lahari936',
-    demo: null,
-    icon: <svg className="w-6 h-6 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>,
-    gradient: 'from-orange-500/15 to-amber-500/5',
-    border: 'border-orange-500/15',
-    tag: 'Data Science',
-    tagColor: 'text-orange-400 bg-orange-500/10 border-orange-500/20',
+    highlight: 'Dec 2025',
   },
 ]
 
@@ -85,45 +59,50 @@ export default function Projects() {
           </h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-400 to-transparent rounded-full" />
           <p className="text-stone-500 text-sm mt-5 max-w-lg leading-relaxed">
-            Production-focused projects that solve real problems. No tutorial clones.
+            Production-focused projects that push real engineering boundaries. Built with purpose.
           </p>
         </motion.div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((proj, i) => (
             <motion.div
               key={proj.title}
               initial={{ opacity: 0, y: 32 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
               className={`project-card bg-gradient-to-br ${proj.gradient} border ${proj.border} flex flex-col`}
             >
               {/* Card top */}
-              <div className="p-6 flex-1">
+              <div className="p-7 flex-1">
                 {/* Icon + tag row */}
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-5">
                   <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-2xl">
                     {proj.icon}
                   </div>
-                  <span className={`px-2.5 py-1 rounded-lg text-xs font-semibold border ${proj.tagColor}`}>
-                    {proj.tag}
-                  </span>
+                  <div className="flex flex-col items-end gap-2">
+                    <span className={`px-2.5 py-1 rounded-lg text-xs font-semibold border ${proj.tagColor}`}>
+                      {proj.tag}
+                    </span>
+                    {proj.highlight && (
+                      <span className="text-stone-500 text-[11px] font-medium">{proj.highlight}</span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="font-['Outfit'] font-bold text-white text-base leading-snug mb-3">
+                <h3 className="font-['Outfit'] font-bold text-white text-base leading-snug mb-4">
                   {proj.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-400 text-sm leading-[1.9]">
                   {proj.desc}
                 </p>
               </div>
 
               {/* Tech stack */}
-              <div className="px-6 pb-4">
+              <div className="px-7 pb-5">
                 <div className="flex flex-wrap gap-1.5 pt-4 border-t border-white/5">
                   {proj.tech.map((t) => (
                     <span key={t} className="px-2.5 py-1 rounded-md bg-white/5 text-slate-400 text-[11px] font-medium border border-white/6">
@@ -134,7 +113,7 @@ export default function Projects() {
               </div>
 
               {/* Actions */}
-              <div className="px-6 pb-6 flex gap-3">
+              <div className="px-7 pb-7 flex gap-3">
                 <a
                   href={proj.github}
                   target="_blank"
@@ -172,7 +151,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.6, duration: 0.5 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
           className="text-center mt-16"
         >
           <a

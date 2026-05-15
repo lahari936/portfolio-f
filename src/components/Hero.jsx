@@ -190,7 +190,7 @@ export default function Hero() {
 
           {/* Role chips */}
           <motion.div variants={item} className="flex flex-wrap gap-2">
-            {['MERN Stack Developer', 'AI Enthusiast', 'Full Stack Engineer'].map((r) => (
+            {['Software Developer', 'AI/ML & Computer Vision', 'Full Stack (MERN)', 'Python'].map((r) => (
               <span key={r}
                 className="px-3 py-1.5 rounded-lg bg-white/8 border border-white/10 text-slate-200 text-xs font-medium tracking-wide backdrop-blur-sm">
                 {r}
@@ -201,7 +201,7 @@ export default function Hero() {
           {/* Tagline */}
           <motion.div variants={item}>
             <p className="text-stone-300 text-[1.08rem] leading-[2.0] max-w-[540px] drop-shadow-md">
-              Building scalable web applications with the MERN stack, crafting AI-powered products, and solving real-world problems through clean, purposeful engineering.
+              B.Tech CSE (AI &amp; ML) student with hands-on internship experience in Computer Vision, Full-Stack Development, and Data Analysis. Building production-relevant systems with Python and JavaScript.
             </p>
           </motion.div>
 
@@ -236,7 +236,7 @@ export default function Hero() {
           {/* Stats row */}
           <motion.div variants={item}
             className="flex gap-10 pt-6 mt-3 border-t border-yellow-500/12">
-            {[['10+', 'Projects'], ['9.4', 'SGPA'], ['2', 'Internships']].map(([val, label]) => (
+            {[['3', 'Internships'], ['9.4', 'SGPA'], ['85.3%', 'CV Accuracy']].map(([val, label]) => (
               <div key={label}>
                 <div className="font-['Outfit'] text-2xl font-black gradient-text">{val}</div>
                 <div className="text-stone-500 text-xs mt-1 tracking-wide">{label}</div>
