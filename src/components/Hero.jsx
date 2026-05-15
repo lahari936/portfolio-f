@@ -225,7 +225,7 @@ export default function Hero() {
               </svg>
               LinkedIn
             </a>
-            <a href="https://drive.google.com/file/d/1OGjH88S_AHaY29qlqbNr-VJ4To3TgeJG/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary backdrop-blur-sm">
+            <a href="https://drive.google.com/file/d/1El-Q4NKJU4kidC2I1keVa6wUlcOk0Opt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary backdrop-blur-sm">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
@@ -262,4 +262,5 @@ export default function Hero() {
     </section>
   )
 }
+
 
